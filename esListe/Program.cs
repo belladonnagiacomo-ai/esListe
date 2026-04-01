@@ -69,7 +69,18 @@
             if(c == true)
             {
                 numeri.Remove(nu);
+                Console.WriteLine("E stato rimosso il numero: " + nu);
             }
+
+            Console.WriteLine();
+
+            foreach(int i in numeri)
+            {
+                Console.Write(i + " ");
+            }
+
+            Console.WriteLine();
+
 
         }
     }
