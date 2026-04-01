@@ -45,13 +45,31 @@
 
             Console.WriteLine();
 
-            List<int> Duplicati = new List<int>() {1,1,1,5,7,2,2,4,4,9,8};
-            for(int i = 0; i < Duplicati.Count; i++)
+            List<string> Duplicati = new List<string>() {"g", "g", "i", "a", "u", "a", "r"};
+            List<string> nonD = new List<string>();
+            for(int i = Duplicati.Count - 1; i >= 0; i--)
             {
-               
+                bool cont = nonD.Contains(Duplicati[i]);
+                if(cont == false)
+                {
+                    nonD.Add(Duplicati[i]);
+                }
+            }
+            foreach(string i in nonD)
+            {
+                Console.Write(i + "  ");
             }
 
+            Console.WriteLine();
 
+            List<int> numeri = new List<int>() { 2, 9, 4, 5, 10, 11, 1, 3, 8, 6, 7 };
+            Console.WriteLine("Inserisci un numero");
+            int nu = Convert.ToInt32(Console.ReadLine());
+            bool c = numeri.Contains(nu);
+            if(c == true)
+            {
+                numeri.Remove(nu);
+            }
 
         }
     }
