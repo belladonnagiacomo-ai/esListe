@@ -12,7 +12,7 @@
             }
             foreach(int z in n)
             {
-                Console.WriteLine($"[{n[z]}]");
+                Console.WriteLine(z);
             }
            
             Console.WriteLine();
@@ -32,14 +32,24 @@
             List<int> pari = new List<int>();
             foreach (int i in num )
             {
-                if((i & 2) == 0)
+                if((i % 2) == 0)
                 {
                     pari.Add(i);
                 }
-                Console.WriteLine("numeri pari: " + pari);
+                
+            }
+            foreach (int z in pari)
+            {
+                Console.WriteLine(z);
             }
 
             Console.WriteLine();
+
+            List<int> Duplicati = new List<int>() {1,1,1,5,7,2,2,4,4,9,8};
+            for(int i = 0; i < Duplicati.Count; i++)
+            {
+               
+            }
 
 
 
